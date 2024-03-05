@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+    <script src="https://kit.fontawesome.com/27a9343adc.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -34,31 +36,34 @@
             <h2 class="title3">Desbloqueie todo o seu potencial com nossa acessoria presencial.</h2>
         </div>
         <div class="r-side">
-            <form action="" method="post">
+            <form action="https://formsubmit.co/mirandajuniorsc@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Obrigado pelo seu contato. Responderemos o mais breve possível!">
                 <div class="campo">
-                    <label>Nome</label>
+                    <label for="nome">Nome</label>
                     <input type="text" name="nome" placeholder="Nome" required>
                 </div>
 
                 <div class="campo">
-                    <label>Email</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email" placeholder="email@email.com" required>
                 </div>
 
                 <div class="campo">
-                    <label>Whatsapp</label>
+                    <label for="tel">Whatsapp</label>
                     <input type="tel" name="tel" placeholder="(XX) XXXXX-XXXX" pattern="^\(\d{2}\)\d{5}-\d{4}$" required>
                 </div>
                 <div class="campo">
-                    <label>Cidade / UF</label>
+                    <label for="cidade">Cidade / UF</label>
                     <input type="text" name="cidade" placeholder="Cidade / UF" required>
                 </div>
                 <div class="campo">
-                    <label>Mensagem</label>
-                    <textarea rows="4" style="width: 450px;" placeholder="Qual é a sua pretenção com a nossa acessoria?" required></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="4" name="mensagem" style="width: 450px;" placeholder="Qual é a sua pretenção com a nossa acessoria?" required></textarea>
 
                 </div>
-                <p class="button"><input type="submit" value="Clique aqui e desbloqueie o Excel!"></p>
+                <button type="submit">Clique aqui e desbloqueie o Excel!</button>
             </form>
         </div>
             
@@ -73,8 +78,13 @@
         </div>
     </div>
     <footer class="rodape">
-        <p>Descomplica Excel - 2024 | Todos os direitos reservados &copy;</p>
-        <p>Desenvolvido por Luiz Miranda Jr. | Frontend Dev</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/_descomplicaexcel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5547988069707&text=Quero%20saber%20mais%20sobre%20a%20Consultoria%20Descomplica%20Excel.%20Pode%20me%20ajudar?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.threads.net/@_descomplicaexcel" target="_blank"><i class="fa-brands fa-threads"></i></a>
+        </div>
+            <p>Descomplica Excel - 2024 | Todos os direitos reservados &copy;</p>
+            <p>Desenvolvido por Luiz Miranda Jr. | Frontend Dev</p>
     </footer>
 
     </div>
