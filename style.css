@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Allerta', sans-serif;
+}
+
+:root {
+    --verde: #5CFF95;
+    --azul: #101B31;
+    --branco: #ffff;
+    font-family: 'Allerta', sans-serif;
+}
+
+.header {
+    background: url(./assets/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+& .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+& .logo {
+    width: 500px;
+}
+& .title {
+    width: 400px;
+    color: var(--branco);
+    font-size: 3.4rem;
+    text-align: center;
+}
+}
+
+.to-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+& .subtitle {
+    width: 420px;
+    color: var(--branco);
+    font-size: 2rem;
+    text-align: right;
+    line-height: 2.5rem;
+}
+& .down {
+    height: 80px;
+    color: #fff;
+}
+}
+.cadeado {
+    width: 450px;
+}
+
+.content {
+    padding: 40px 0;
+    background: rgb(16,27,49);
+    background: -moz-linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
+    background: linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#101b31",endColorstr="#5cff95",GradientType=1);
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 60px;
+}
+
+.l-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+& .title1 {
+        color: var(--verde);
+        font-size: 2.6rem;
+        width: 500px;
+        text-align: center;
+}
+& .title2 {
+        color: var(--branco);
+        font-size: 1.5rem;
+        width: 500px;
+        text-align: center;
+}
+& .title3 {
+        color: var(--verde);
+        font-size: 2.1rem;
+        width: 500px;
+        text-align: center
+}
+}
+
+.r-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: var(--verde);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.campo input, textarea {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 4px 6px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.campo input:focus, textarea:focus {
+    background-color: #f2f2f2;
+    outline: 2px solid var(--verde);
+}
+
+.button input {
+    background-color: var(--verde);
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.button input:hover {
+    -webkit-box-shadow: 2px 5px 10px -2px rgba(16,27,49,0.32);
+    -moz-box-shadow: 2px 5px 10px -2px rgba(16,27,49,0.32);
+    box-shadow: 2px 5px 10px -2px rgba(16,27,49,0.32);
+    outline: 2px solid var(--azul);
+}
+
+.empresas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.acessorados {
+    font-size: 3rem;
+    width: 400px;
+    text-align: center;
+    color: var(--azul);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logos {
+& .villareal img {
+    height: 150px;
+}
+& .hodie img {
+    height: 150px;
+}
+& .yiwu img {
+    height: 110px;
+}
+}
+
+.logos img:hover {
+    scale: 105%;
+}
