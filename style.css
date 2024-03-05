@@ -154,6 +154,7 @@
 }
 
 .empresas {
+    padding: 20px 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,4 +188,12 @@
 
 .logos img:hover {
     scale: 105%;
+}
+
+.rodape {
+    padding: 20px 0;
+& p {
+    color: var(--azul);
+    text-align: center;
+}
 }
