@@ -5,6 +5,10 @@
     font-family: 'Allerta', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --verde: #5CFF95;
     --azul: #101B31;
@@ -61,14 +65,13 @@
 }
 
 .content {
-    padding: 40px 0;
+    min-height: 100vh;
     background: rgb(16,27,49);
     background: -moz-linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
     background: linear-gradient(180deg, rgba(16,27,49,1) 50%, rgba(92,255,149,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#101b31",endColorstr="#5cff95",GradientType=1);
 }
-
 
 .form-content {
     display: flex;
@@ -116,7 +119,7 @@
 .campo label {
     color: var(--verde);
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
 }
 
 .campo input, textarea {
@@ -214,4 +217,39 @@ button:hover {
 
 .rodape i:hover {
     scale: 120%;
+}
+
+.obrigado {
+    background: url(./assets/wallpaper.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+& .text-content {
+   margin-top: 100px;
+   text-decoration: none;
+}
+& .text-content p {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--branco);
+    line-height: 4rem;
+    font-weight: bold;
+}
+}
+
+.back {
+    margin-top: 250px;
+    transition: all 0.2s;
+}
+.back a {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: var(--azul);
+    text-decoration: none;
+}
+.back:hover {
+    scale: 110%;
 }
