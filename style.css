@@ -248,6 +248,11 @@ button:hover {
     color: var(--azul);
     text-align: center;
     font-height: light;
+    line-height: 2rem;
+}
+& p a {
+    text-decoration: none;
+    color: var(--azul);
 }
 }
 
