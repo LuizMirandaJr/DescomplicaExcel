@@ -274,7 +274,7 @@ button:hover {
 
 @media (max-width: 500px) {
   .header {
-    background-position: fixed;
+    background-attachment: local;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -359,6 +359,7 @@ button:hover {
     flex-direction: column;
   }
   .acessorados {
+    margin-top: 10px;
     font-size: 1.6rem;
     color: var(--verde);
   }
