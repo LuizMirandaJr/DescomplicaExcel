@@ -327,16 +327,16 @@ button:hover {
 
     & .title1 {
       font-size: 1.5rem;
-      width: 100vw;
+      width: 90vw;
     }
     & .title2 {
       font-size: 1rem;
       text-align: center;
-      width: 100vw;
+      width: 90vw;
     }
     & .title3 {
       font-size: 1.2rem;
-      width: 100vw;
+      width: 90vw;
     }
   }
 
