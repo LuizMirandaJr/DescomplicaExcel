@@ -272,7 +272,7 @@ button:hover {
   scale: 120%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .header {
     background-position: fixed;
     height: 100vh;
@@ -322,10 +322,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 40px;
 
     & .title1 {
       font-size: 1.5rem;
-      width: 90%;
+      width: 100%;
     }
     & .title2 {
       font-size: 1rem;
@@ -334,7 +335,7 @@ button:hover {
     }
     & .title3 {
       font-size: 1.2rem;
-      width: 90%;
+      width: 100%;
     }
   }
 
@@ -344,7 +345,7 @@ button:hover {
 
   .campo input,
   textarea {
-    width: 90%;
+    width: 100%;
     padding: 5px 5px;
     line-height: 1.5rem;
   }
