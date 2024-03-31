@@ -272,156 +272,105 @@ button:hover {
   scale: 120%;
 }
 
-@media screen and (max-height: 900px) {
+@media (max-width: 450px) {
   .header {
+    background-position: fixed;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    padding-top: 40px;
     & .left {
-      width: 100%;
-      gap: 40px;
+      gap: 30px;
     }
     & .logo {
-      margin-top: 100px;
-      width: 85vw;
+      width: 60%;
     }
     & .title {
-      font-size: 2.25rem;
-      width: 100%;
-    }
-    & .subtitle {
-      width: 70%;
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-    & .down {
-      height: 70px;
-      color: #fff;
-    }
-    & .to-down {
-      width: 90%;
-    }
-    & .cadeado {
-      width: 280px;
-      margin-top: 20px;
-      margin-bottom: 180px;
+      width: 80%;
+      font-size: 2.4rem;
     }
   }
 
-  form {
+  .to-down {
+    width: 70%;
+    margin: auto;
     justify-content: center;
     align-items: center;
+    & .subtitle {
+      font-size: 1.3rem;
+      text-align: right;
+      line-height: 1.6rem;
+    }
+    & .down {
+      height: 60px;
+      color: #fff;
+    }
+  }
+  .cadeado {
+    width: 70vw;
+    margin: 20px;
   }
 
   .form-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    & .l-side {
-      align-items: center;
-    }
+    padding-top: 240px;
+  }
+
+  .l-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     & .title1 {
-      font-size: 1.4rem;
-      width: 100%;
-      padding: 0 20px;
+      font-size: 1.5rem;
+      width: 90%;
     }
     & .title2 {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      text-align: center;
+      width: 90%;
     }
     & .title3 {
       font-size: 1.2rem;
       width: 90%;
-      paddin: 0 40px;
     }
   }
 
-  .campo {
-    align-items: center;
+  .campo label {
+    text-align: center;
   }
 
   .campo input,
   textarea {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-    width: 80vw;
-  }
-
-  button {
-    width: 80vw;
+    width: 100%;
+    padding: 5px 5px;
+    line-height: 1.5rem;
   }
 
   .empresas {
-    display: flex;
+    margin-top: 190px;
     flex-direction: column;
-    margin-top: 80px;
   }
   .acessorados {
-    text-align: center;
-    font-size: 2rem;
-    width: 90vw;
+    font-size: 1.6rem;
+    width: 100%;
     color: var(--verde);
   }
 
   .logos {
-    display: flex;
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .logos {
-    & .blck img {
-      height: 100px;
-      transition: all 0.2s;
-    }
-    & .villareal img {
-      height: 160px;
-      transition: all 0.2s;
-    }
+    gap: 40px;
     & .hodie img {
-      height: 120px;
+      height: 130px;
       transition: all 0.2s;
     }
   }
 
   .rodape {
-    padding: 30px 10px;
-    & p {
-      font-size: 0.7rem;
-      line-height: 1.5rem;
-    }
+    font-size: 0.8rem;
+    padding: 20px 10px;
   }
-}
-@media screen and (max-height: 800px) {
-   .form-content {
-    & .l-side {
-      align-items: center;
-    }
-    & .title1 {
-      font-size: 1.4rem;
-      width: 100%;
-      padding: 0 20px;
-    }
-  }
-  .empresas {
-    display: flex;
-    flex-direction: column;
-    margin-top: 160px;
-  }
-}
-@media screen and (max-height: 700px) {
-   .form-content {
-    & .l-side {
-      align-items: center;
-    }
-    & .title1 {
-      font-size: 1.4rem;
-      width: 100%;
-      padding: 0 20px;
-    }
-  }
-  .empresas {
-    display: flex;
-    flex-direction: column;
-    margin-top: 340px;
-  }
+
 }
