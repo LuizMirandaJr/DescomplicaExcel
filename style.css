@@ -256,3 +256,56 @@ button:hover {
 .rodape i:hover {
     scale: 120%;
 }
+
+@media screen and (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    & .logo {
+        width:70%;
+    }
+    & .title {
+        font-size: 2.5rem;
+    }
+    & .subtitle {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    & .down {
+        height: 70px;
+        color: #fff;
+    }
+    & .to-down {
+        width: 100%;
+    }
+    & .cadeado {
+        width:400px;
+    }
+    & .left {
+        gap: 40px;
+    }
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding: 550px 0;
+}
+
+.empresas {
+    display: flex;
+    flex-direction: column;
+}
+.acessorados {
+    font-size: 2.5rem;
+    width: 100%;
+    color: var(--verde);
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+}
+
+}
