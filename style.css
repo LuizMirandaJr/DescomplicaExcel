@@ -211,7 +211,7 @@ button:hover {
 }
 
 .obrigado {
-  background: url(./assets/wallpaper.png) no-repeat;
+  background: url(./assets/wallpaper.webp) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -229,10 +229,14 @@ button:hover {
     line-height: 4rem;
     font-weight: bold;
   }
+  & .hidden {
+    display: none;
+  }
 }
 
 .back {
-  margin-top: 250px;
+  position: absolute;
+  bottom: 200px;
   transition: all 0.2s;
 }
 .back a {
@@ -377,5 +381,26 @@ button:hover {
     font-size: 0.8rem;
     padding: 20px 10px;
   }
+
+  .obrigado {
+    background: url(./assets/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    & .text-content {
+      margin-top: 100px;
+      text-decoration: none;
+    }
+    & .text-content p {
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+    & .hidden {
+      margin-top: 100px;
+      display: initial;
+      width: 80%;
+    }
+  }
+
 
 }
