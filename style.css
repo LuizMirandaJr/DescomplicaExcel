@@ -188,20 +188,20 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
 }
 
 .logos {
+  & .blck img {
+    height: 120px;
+    transition: all 0.2s;
+  }
   & .villareal img {
     height: 150px;
     transition: all 0.2s;
   }
   & .hodie img {
     height: 150px;
-    transition: all 0.2s;
-  }
-  & .yiwu img {
-    height: 110px;
     transition: all 0.2s;
   }
 }
@@ -272,17 +272,18 @@ button:hover {
   scale: 120%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-height: 900px) {
   .header {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    gap: 0;
+    height: 80vh;
     & .left {
       width: 100%;
+      gap: 40px;
     }
     & .logo {
-      width: 70%;
+      margin-top: 100px;
+      width: 85vw;
     }
     & .title {
       font-size: 2.25rem;
@@ -302,6 +303,7 @@ button:hover {
     }
     & .cadeado {
       width: 280px;
+      margin-top: 20px;
     }
   }
 
@@ -315,12 +317,13 @@ button:hover {
     flex-direction: column;
     gap: 20px;
     & .l-side {
-    align-items: center;
-    }   
+      align-items: center;
+    }
     & .title1 {
       font-size: 1.4rem;
       width: 100%;
       padding: 0 20px;
+      margin-top: 120px;
     }
     & .title2 {
       font-size: 1.1rem;
@@ -339,7 +342,7 @@ button:hover {
   .campo input,
   textarea {
     font-size: 0.8rem;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     width: 80vw;
   }
 
@@ -350,6 +353,7 @@ button:hover {
   .empresas {
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
   }
   .acessorados {
     text-align: center;
@@ -361,28 +365,65 @@ button:hover {
   .logos {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 
   .logos {
-    & .villareal img {
+    & .blck img {
       height: 100px;
+      transition: all 0.2s;
+    }
+    & .villareal img {
+      height: 160px;
       transition: all 0.2s;
     }
     & .hodie img {
-      height: 100px;
-      transition: all 0.2s;
-    }
-    & .yiwu img {
-      height: 70px;
+      height: 120px;
       transition: all 0.2s;
     }
   }
-  
+
   .rodape {
-    paddign: 0;
+    padding: 30px 10px;
     & p {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+      font-size: 0.7rem;
+      line-height: 1.5rem;
+    }
   }
 }
+@media screen and (max-height: 800px) {
+   .form-content {
+    & .l-side {
+      align-items: center;
+      margin-top: 180px;
+    }
+    & .title1 {
+      font-size: 1.4rem;
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .empresas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+  }
+}
+@media screen and (max-height: 700px) {
+   .form-content {
+    & .l-side {
+      align-items: center;
+      margin-top: 400px;
+    }
+    & .title1 {
+      font-size: 1.4rem;
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .empresas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 340px;
+  }
 }
