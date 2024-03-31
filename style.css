@@ -295,14 +295,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     & .subtitle {
       font-size: 1.2rem;
       text-align: right;
       line-height: 1.8rem;
     }
     & .down {
-      height: 60px;
+      height: 80px;
       color: #fff;
     }
   }
@@ -319,6 +319,7 @@ button:hover {
 
   .l-side {
     display: flex;
+    width: 90vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -359,7 +360,6 @@ button:hover {
   }
   .acessorados {
     font-size: 1.6rem;
-    width: 100vw;
     color: var(--verde);
   }
 
