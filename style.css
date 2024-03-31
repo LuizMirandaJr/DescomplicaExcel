@@ -344,7 +344,7 @@ button:hover {
 
   .campo input,
   textarea {
-    width: 100%;
+    width: 90%;
     padding: 5px 5px;
     line-height: 1.5rem;
   }
@@ -355,7 +355,7 @@ button:hover {
   }
   .acessorados {
     font-size: 1.6rem;
-    width: 100%;
+    width: 90%;
     color: var(--verde);
   }
 
